@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ICE Task 3</title>
+</head>
+<body>
+
+    <h1>ICE TASK 3</h1>
+
+    <!-- SECTION 1: Change the label -->
+    <h2>Question 1</h2>
+
+    <p id="experience">What is my experience?</p>
+    <button onclick="showExperience()">Answer</button>
+
+    <script>
+        function showExperience() {
+            document.getElementById("experience").innerHTML =
+                "This is my first JavaScript code";
+        }
+    </script>
+
+    <hr>
+    <br>
+
+    <!-- SECTION 2: Calculate double -->
+    <h2>Question 2</h2>
+
+    <label for="number">Enter a number:</label>
+    <input type="number" id="number">
+    <button onclick="calculateDouble()">Calculate Double</button>
+
+    <p id="doubleResult">Result will appear here.</p>
+
+    <script>
+        function calculateDouble() {
+            let num = Number(document.getElementById("number").value);
+            let result = num * 2;
+
+            document.getElementById("doubleResult").innerHTML =
+                "Double the number is: " + result;
+        }
+    </script>
+
+    <hr>
+    <br>
+
+    <!-- SECTION 3: Calculate average -->
+    <h2>Question 3</h2>
+
+    <label for="num1">Enter first number:</label>
+    <input type="number" id="num1">
+
+    <br><br>
+
+    <label for="num2">Enter second number:</label>
+    <input type="number" id="num2">
+
+    <br><br>
+
+    <button onclick="calculateAverage()">Calculate Average</button>
+
+    <p id="averageResult">Average will appear here.</p>
+
+    <script>
+        function calculateAverage() {
+            let first = Number(document.getElementById("num1").value);
+            let second = Number(document.getElementById("num2").value);
+
+            let average = (first + second) / 2;
+
+            document.getElementById("averageResult").innerHTML =
+                "The average is: " + average;
+        }
+    </script>
+
+</body>
+</html>
